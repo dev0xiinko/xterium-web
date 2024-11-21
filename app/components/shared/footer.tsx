@@ -1,0 +1,47 @@
+import Link from "next/link";
+
+export function Footer() {
+  return (
+    <div>
+      <div className="bg-gray-800">
+        <div className="container mx-auto text-white py-8">
+          <div className="flex justify-between gap-4">
+            <Link href="/" className="flex items-center">
+              <img
+                src="/xterium_logo.png"
+                alt="Xterium Logo"
+                className="h-10 mr-3"
+              />
+              <span className="text-3xl font-bold text-slate-500">Xterium</span>
+            </Link>
+            <ul className="flex items-center gap-4 text-slate-400 text-sm">
+              <li>
+                <a href="/terms-and-conditions" className="hover:text-gray-200">
+                  Terms of Use
+                </a>
+              </li>
+              <li>
+                <a href="/privacy-policy" className="hover:text-gray-200">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="/cookie-policy" className="hover:text-gray-200">
+                  Cookie Policy
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <nav className="bg-black">
+        <div className="container py-4 mx-auto flex justify-between items-center">
+          <p className="footer-left text-white text-xs text-slate-400">
+            © 2024 Xterium UI. All rights reserved.
+          </p>
+          <p className="text-xs text-white">v1.0.0</p>
+        </div>
+      </nav>
+    </div>
+  );
+}
