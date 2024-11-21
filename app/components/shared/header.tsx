@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function Header() {
   return (
-    <nav className="bg-black">
+    <nav className="bg-[#00000080] backdrop-blur-md">
       <div className="container mx-auto flex justify-between items-center py-4">
         <Link href="/" className="flex items-center">
           <img

@@ -21,19 +21,15 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>
-        <div className="mb-4">
-          <header>
-            <Header />
-          </header>
-        </div>
+        <header className="fixed w-full z-30">
+          <Header />
+        </header>
 
-        <main className="mb-16 min-h-screen">{children}</main>
+        <main className="min-h-screen">{children}</main>
 
-        <div className="mt-4">
-          <footer>
-            <Footer />
-          </footer>
-        </div>
+        <footer>
+          <Footer />
+        </footer>
       </body>
     </html>
   );
