@@ -16,19 +16,22 @@ export function Footer() {
             </Link>
             <ul className="flex items-center gap-4 text-slate-400 text-sm">
               <li>
-                <a href="/terms-and-conditions" className="hover:text-gray-200">
+                <Link
+                  href="/terms-and-conditions"
+                  className="hover:text-gray-200"
+                >
                   Terms of Use
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/privacy-policy" className="hover:text-gray-200">
+                <Link href="/privacy-policy" className="hover:text-gray-200">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/cookie-policy" className="hover:text-gray-200">
+                <Link href="/cookie-policy" className="hover:text-gray-200">
                   Cookie Policy
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
