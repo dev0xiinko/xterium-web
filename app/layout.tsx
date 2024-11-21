@@ -21,7 +21,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>
-        <header className="fixed w-full z-30">
+        <header className="sticky top-0 w-full z-30">
           <Header />
         </header>
 

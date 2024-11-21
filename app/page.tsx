@@ -2,7 +2,7 @@ import React from "react";
 
 export default function HomePage() {
   return (
-    <div>
+    <div className="-mt-[70px]">
       <section
         className="bg-norepeat bg-cover relative"
         style={{ backgroundImage: "url('/home-banner.webp')" }}
@@ -39,7 +39,7 @@ export default function HomePage() {
             Why Choose Xterium Wallet?
           </h3>
           <ul className="flex">
-            <li className="p-4">
+            <li className="p-4 flex-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -61,7 +61,7 @@ export default function HomePage() {
                 full control of your assets.
               </p>
             </li>
-            <li className="p-4">
+            <li className="p-4 flex-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -77,15 +77,12 @@ export default function HomePage() {
                 />
               </svg>
 
-              <h4 className="mb-2 w-fit py-2">
-                Send and Receive Cryptocurrency
-              </h4>
+              <h4 className="mb-2 w-fit py-2">Send and Receive Token</h4>
               <p className="text-sm opacity-80">
-                Easily manage Xode tokens and other supported cryptocurrencies
-                with just a few clicks.
+                Easily manage Xode tokens with just a few clicks.
               </p>
             </li>
-            <li className="p-4">
+            <li className="p-4 flex-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -107,7 +104,7 @@ export default function HomePage() {
                 contracts effortlessly.
               </p>
             </li>
-            <li className="p-4">
+            <li className="p-4 flex-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -133,7 +130,7 @@ export default function HomePage() {
       </section>
       <section className="py-16 container mx-auto">
         <h3 className="text-theme-default uppercase font-bold text-lg mb-8">
-          Why Choose Xterium Wallet?
+          Getting Started with Xterium Wallet
         </h3>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
         repellendus soluta omnis ad aperiam quaerat. Dolorum reiciendis
