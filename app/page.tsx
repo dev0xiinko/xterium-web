@@ -19,7 +19,7 @@ export default function HomePage() {
                 interacting with Blockchain—right from your browser.
               </h2>
             </div>
-            <div className="flex items-center justify-center gap-2 mt-10">
+            <div className="flex items-center justify-center gap-4 mt-10">
               <button className="bg-theme-default text-white py-4 px-6 rounded-full uppercase font-bold">
                 Download for Chrome
               </button>
