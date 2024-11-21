@@ -6,7 +6,7 @@ import { Header } from "./components/shared/header";
 import { Footer } from "./components/shared/footer";
 
 export const metadata = {
-  title: "Xterium UI",
+  title: "Xterium",
   description: "A simple website for Xterium UI",
 };
 
