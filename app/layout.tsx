@@ -27,7 +27,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           </header>
         </div>
 
-        <main className="mb-16">{children}</main>
+        <main className="mb-16 min-h-screen">{children}</main>
 
         <div className="mt-4">
           <footer>
