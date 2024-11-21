@@ -20,10 +20,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        {/* Header with margin */}
         <div className="mb-4">
           <header>
-            <nav className="p-4 bg-gray-200">
+            <nav className="p-4 bg-black">
               <div className="max-w-6xl mx-auto flex justify-between items-center">
                 <a href="/" className="flex items-center">
                     <img
@@ -31,23 +30,21 @@ export default function RootLayout({ children }: RootLayoutProps) {
                       alt="Xterium Logo"
                       className="h-12 mr-3"
                     />
-                    <span className="text-3xl font-bold">Xterium</span>
-                  </a>
+                  <span className="text-3xl font-bold text-white">Xterium</span>
+                </a>
               </div>
             </nav>
           </header>
         </div>
 
-        {/* Main content */}
         <main className="mb-16">{children}</main>
 
-        {/* Footer with margin */}
         <div className="mt-4">
           <footer >
-            <nav className="p-4 bg-gray-200">
-                <div className="max-w-6xl mx-auto flex justify-between items-center">
-                <div className="footer-left">© 2024 Xterium UI. All rights reserved.</div>
-                <div className="footer-right margin-right">
+            <nav className="p-4 bg-black">
+              <div className="max-w-6xl mx-auto flex justify-between items-center">
+                <div className="footer-left text-white text-xl">© 2024 Xterium UI. All rights reserved.</div>
+                <div className="footer-right margin-right text-white text-xl">
                   <a
                     href="/terms-and-conditions"
                     className="ml-3 hover:text-gray-200"
