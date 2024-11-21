@@ -7,16 +7,16 @@ export default function HomePage() {
         className="bg-norepeat bg-cover relative"
         style={{ backgroundImage: "url('/home-banner.webp')" }}
       >
-        <div className="bg-[#d2146e5e] backdrop-blur-sm">
+        <div className="bg-[#d2146e5e] backdrop-blur-sm pt-[70px]">
           <div className="z-20 container mx-auto text-center flex flex-col justify-center items-center h-screen">
             <h1 className="text-[4em] leading-none font-bold mb-6 text-white">
-              Your Gateway to the Xode Blockchain
+              Your Gateway to Blockchain
             </h1>
             <div className="text-center mt-8 flex justify-center">
               <h2 className="text-white max-w-[700px]">
                 Secure, seamless, and powerful. The Xterium Wallet Extension is
                 your trusted companion for managing digital assets and
-                interacting with the Xode Blockchain—right from your browser.
+                interacting with Blockchain—right from your browser.
               </h2>
             </div>
             <div className="flex items-center justify-center gap-2 mt-10">
@@ -79,7 +79,7 @@ export default function HomePage() {
 
               <h4 className="mb-2 w-fit py-2">Send and Receive Token</h4>
               <p className="text-sm opacity-80">
-                Easily manage Xode tokens with just a few clicks.
+                Easily manage tokens with just a few clicks.
               </p>
             </li>
             <li className="p-4 flex-1">
@@ -128,14 +128,39 @@ export default function HomePage() {
           </ul>
         </div>
       </section>
-      <section className="py-16 container mx-auto">
-        <h3 className="text-theme-default uppercase font-bold text-lg mb-8">
-          Getting Started with Xterium Wallet
-        </h3>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
-        repellendus soluta omnis ad aperiam quaerat. Dolorum reiciendis
-        excepturi numquam repudiandae impedit exercitationem odit sapiente
-        minus, cupiditate doloremque officiis fuga temporibus!
+      <section className="py-16 container mx-auto flex gap-8">
+        <div className="flex-1">
+          <h3 className="text-theme-default uppercase font-bold text-lg mb-8">
+            Getting Started with Xterium Wallet
+          </h3>
+
+          <ul className="flex flex-col gap-4">
+            <li className="bg-slate-50 rounded-xl py-4 px-8">
+              <h4 className="text-theme-default font-bold">
+                1. Download the Extension
+              </h4>
+              <p>Available for Chrome, Firefox, and more.</p>
+            </li>
+            <li className="bg-slate-50 rounded-xl py-4 px-8">
+              <h4 className="text-theme-default font-bold">
+                2. Create or Import a Wallet
+              </h4>
+              <p>Generate a new wallet or import your existing one securely.</p>
+            </li>
+            <li className="bg-slate-50 rounded-xl py-4 px-8">
+              <h4 className="text-theme-default font-bold">
+                3. Start Managing Your Digital Assets
+              </h4>
+              <p>
+                Access your tokens, send/receive tokens, and interact with Xode
+                dApps.
+              </p>
+            </li>
+          </ul>
+        </div>
+        {/* <div className="w-fit">
+          <img src="/screen.png" alt="" className="w-[300px] rounded-xl" />
+        </div> */}
       </section>
     </div>
   );
