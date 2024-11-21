@@ -15,7 +15,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body>
-        <header className="flex items-center p-4 bg-[#32436A] text-white">
+        <header className="flex items-center p-4 bg-[#000000] text-white">
           <img src="/xterium_logo.png" alt="Xterium Logo" className="h-12 mr-3" />
           <span className="text-xl font-bold">Xterium</span>
         </header>
