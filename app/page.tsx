@@ -7,10 +7,16 @@ export default function HomePage() {
         className="bg-norepeat bg-cover relative"
         style={{ backgroundImage: "url('/home-banner.webp')" }}
       >
-        <div className="bg-[#d2146e5e] backdrop-blur-sm pt-[70px]">
-          <div className="z-20 container mx-auto text-center flex flex-col justify-center items-center h-screen">
+        <div
+          className="bg-[#d2146e5e] backdrop-blur-sm pt-[70px] h-screen"
+          style={{ boxShadow: "inset 0 -20px 152px -26px #d2146e" }}
+        >
+          <div className="z-20 container mx-auto text-center flex flex-col justify-center items-center h-full">
             <h1 className="text-[4em] leading-none font-bold mb-6 text-white">
-              Your Gateway to Blockchain
+              Your Gateway to{" "}
+              <span className="py-1 px-2 bg-white text-theme-default">
+                Blockchain
+              </span>
             </h1>
             <div className="text-center mt-8 flex justify-center">
               <h2 className="text-white max-w-[700px]">
@@ -20,12 +26,12 @@ export default function HomePage() {
               </h2>
             </div>
             <div className="flex items-center justify-center gap-4 mt-10">
-              <button className="bg-theme-default text-white py-4 px-6 rounded-full uppercase font-bold">
+              <button className="bg-white text-theme-default py-4 px-6 rounded-full uppercase font-bold">
                 Download for Chrome
               </button>
               <a
                 href="#"
-                className="text-theme-default border-2 border-theme-default py-4 px-6 rounded-full uppercase font-bold"
+                className="text-white border-2 border-white py-4 px-6 rounded-full uppercase font-bold"
               >
                 Learn More
               </a>
@@ -39,7 +45,7 @@ export default function HomePage() {
             Why Choose Xterium Wallet?
           </h3>
           <ul className="flex">
-            <li className="p-4 flex-1">
+            <li className="p-4 flex-1 border-r border-[#ec4192]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -61,7 +67,7 @@ export default function HomePage() {
                 full control of your assets.
               </p>
             </li>
-            <li className="p-4 flex-1">
+            <li className="p-4 flex-1 border-r border-[#ec4192]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -82,7 +88,7 @@ export default function HomePage() {
                 Easily manage tokens with just a few clicks.
               </p>
             </li>
-            <li className="p-4 flex-1">
+            <li className="p-4 flex-1 border-r border-[#ec4192]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
