@@ -8,9 +8,9 @@ export default function TermsAndConditionsPage() {
           <div className="mb-12">
             <h4 className="text-3xl font-bold mb-8">Xterium Term Of Use</h4>
             <p className="text-lg mt-2 text-gray-700 text-justify">
-              Welcome to Xterium! These Terms of Use ("Terms") govern your use
-              of our website [www.Xterium.net] ("Website") and any associated
-              services provided by Xterium ("we", "us", or "our"). By accessing
+              Welcome to Xterium! These Terms of Use (&quot;Terms&quot;) govern your use
+              of our website [www.Xterium.net] (&quot;Website&quot;) and any associated
+              services provided by Xterium (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;). By accessing
               or using the Website, you agree to be bound by these Terms. If you
               do not agree with these Terms, please do not use the Website.
             </p>
@@ -107,7 +107,7 @@ export default function TermsAndConditionsPage() {
           <div className="mb-12">
             <h4 className="font-bold">6. Disclaimer of Warranties</h4>
             <p className="text-lg mt-2 text-gray-700 text-justify">
-              The Website is provided "as is" and "as available" without
+              The Website is provided &quot;as is&quot; and &quot;as available&quot; without
               warranties of any kind, either express or implied. We disclaim all
               warranties, including but not limited to, implied warranties of
               merchantability, fitness for a particular purpose, and

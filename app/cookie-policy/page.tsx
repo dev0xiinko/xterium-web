@@ -9,9 +9,9 @@ export default function CookiePolicyPage() {
           <div className="mb-8">
             <h4 className="font-bold uppercase underline">Introduction</h4>
             <p className="text-lg mt-2 text-gray-700 text-justify">
-              Welcome to Xterium! This Cookie Policy explains how Xterium ("we",
-              "us", or "our") uses cookies and similar technologies when you
-              visit our website [www.Xterium.com] ("Website"). This policy aims
+              Welcome to Xterium! This Cookie Policy explains how Xterium (&quot;we&quot;,
+              &quot;us&quot;, or &quot;our&quot;) uses cookies and similar technologies when you
+              visit our website [www.Xterium.com] (&quot;Website&quot;). This policy aims
               to provide you with clear and comprehensive information about the
               types of cookies we use and their purposes.
             </p>

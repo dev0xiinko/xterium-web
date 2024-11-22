@@ -20,7 +20,7 @@ export function Footer() {
                   href="/terms-and-conditions"
                   className="hover:text-gray-200"
                 >
-                  Terms of Use
+                  Terms of Service
                 </Link>
               </li>
               <li>
