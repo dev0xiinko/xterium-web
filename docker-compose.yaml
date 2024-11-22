@@ -1,9 +1,6 @@
-version: "3.9"
-
 services:
   app:
-    build:
-        dockerfile: Dockerfile
+    image: xoderockson/xterium-web:latest
     container_name: xterium-web
     ports:
-      - 3000:3000
+      - 3013:3000
