@@ -1,6 +1,4 @@
-// app/layout.tsx
 import React, { ReactNode } from "react";
-import Head from "next/head";
 import "./globals.css";
 import { Header } from "./components/shared/header";
 import { Footer } from "./components/shared/footer";
@@ -17,9 +15,6 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <body>
         <header className="sticky top-0 w-full z-30">
           <Header />
