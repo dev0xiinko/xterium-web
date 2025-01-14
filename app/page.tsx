@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
@@ -159,6 +160,180 @@ export default function HomePage() {
           <img src="/screen.png" alt="" className="w-[300px] rounded-xl" />
           </div> */}
       </section>
+      <section className="py-16 bg-black text-white">
+        <div className="container mx-auto">
+          <h1 className="text-[4em] leading-none font-bold mb-6 text-theme-default text-center">
+            Creating a New Wallet
+          </h1>
+          <div className="flex flex-wrap justify-center items-start gap-6 sm:gap-12">
+            {[
+              {
+                image: '/creating_new_wallet/addextension.png',
+                title: 'Install Xterium Extension',
+                description: 'Open your web browser and search for "Google Extensions". In the search bar, type "Xterium" to go to the installation page. Click the "Add to Chrome" button to proceed. A prompt will appear asking if you want to add Xterium to your extensions. Click the "Add Extension" button to confirm. Xterium will automatically be added to your list of extensions.',
+              },
+              {
+                image: '/creating_new_wallet/setuppassword.png',
+                title: 'Set Up Password',
+                description: 'Open your Xterium Wallet Extension and set up a password for it. The password must be at least 8 characters long and include an uppercase letter, a lowercase letter, and a number. Once done, click the "SETUP PASSWORD" button. You will then be directed to the balance section of the Xterium Wallet.',
+              },
+              {
+                image: '/creating_new_wallet/addwallet.png',
+                title: 'Add Wallet',
+                description: 'To add a wallet to your extension, click the sidebar button located in the upper left corner. Then, select "Wallets". Click the "Add Wallet" button.',
+              },
+              {
+                image: '/creating_new_wallet/generatemnemonic.png',
+                title: 'Generate Mnemonic Phrase',
+                description: 'Provide a unique name for your wallet. To generate a mnemonic phrase, secret key, and public key, click the "Generate Mnemonic Phrase" button. Once the mnemonic phrase is generated, make sure to write it down and store it securely, as you won’t be able to recover your account if it’s lost. Then, click the "Save" button to proceed. You can now view your added wallet and make transactions on the wallet page of the Xterium Wallet Extension. Important:',
+              },
+            ].map(({ image, title, description }, index) => (
+              <div key={index} className="flex flex-col items-center justify-start gap-4 w-full sm:w-[250px] md:w-[300px]">
+                <div className="w-full h-[350px] mt-12 flex justify-center items-center">
+                  <Image src={image} alt={title} width={300} height={350} className="object-contain" />
+                </div>
+                <h4 className="text-white font-bold text-xl mt-8 text-center">{title}</h4>
+                
+                <p className="flex-shrink-0 max-w-xs text-sm text-justify opacity-80 mt-2">
+                  {description.split('"').map((part, i) => (
+                    i % 2 === 0 ? (
+                      part
+                    ) : (
+                      <span key={i} className="text-theme-default font-bold">{part}</span>
+                    )
+                  ))}
+                  {description.includes('Important:') && (
+                    <span className="text-yellow-500 font-bold"><br /><br />Note: Store your mnemonic phrase securely. If lost, it cannot be recovered.</span>
+                  )}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="py-16 bg-black text-white">
+        <div className="container mx-auto">
+          <h1 className="text-[4em] leading-none font-bold mb-6 text-theme-default text-center">
+            Importing a Wallet
+          </h1>
+          <div className="flex flex-row w-full justify-start mt-12">
+            <h3 className="flex-1 text-white uppercase font-bold text-lg mb-8 text-start">
+              Using Existing Mnemonic Phrase
+            </h3>
+            <h3 className="flex-1 text-white uppercase font-bold text-lg mb-8 text-start">
+              Using Xode JSON File
+            </h3>
+          </div>
+          <div className="flex flex-wrap justify-center items-start gap-6 sm:gap-12">
+            {[
+              {
+                image: '/importing_wallet/mnemonicaddwallet.png',
+                title: 'Select Add Wallet',
+                description: 'On the Wallet page, click the "Add Wallet" button.',
+              },
+              {
+                image: '/importing_wallet/mnemonicinput.png',
+                title: 'Input Existing Mnemonic',
+                description: 'Enter a unique name for your wallet, then type or paste your 12 mnemonic seeds in order to generate the secret key and public key. Click "Save" to add the wallet. It will now appear in your wallet list.',
+              },
+              {
+                image: '/importing_wallet/jsonimportwallet.png',
+                title: 'Select Import Wallet',
+                description: 'On the Wallet page, click the "IMPORT WALLET" button to open an expanded view for importing your wallet.',
+              },
+              {
+                image: '/importing_wallet/jsonupload.png',
+                title: 'Upload Wallet JSON',
+                description: 'Enter a unique name for your wallet, then select the Xode JSON file of the wallet you wish to import from your desktop. Afterward, click the "Save" button. You can now see the imported wallet in your Wallet list.',
+              },
+            ].map(({ image, title, description }, index) => (
+              <div key={index} className="flex flex-col items-center justify-start gap-4 w-full sm:w-[250px] md:w-[300px]">
+                <div className="w-full h-[350px] mt-4 flex justify-center items-center">
+                  <Image src={image} alt={title} width={300} height={350} className="object-contain" />
+                </div>
+                <h4 className="text-white font-bold text-xl mt-8 text-center">{title}</h4>
+                
+                <p className="flex-shrink-0 max-w-xs text-sm text-justify opacity-80 mt-2">
+                  {description.split('"').map((part, i) => (
+                    i % 2 === 0 ? (
+                      part
+                    ) : (
+                      <span key={i} className="text-theme-default font-bold">{part}</span>
+                    )
+                  ))}
+                  {description.includes('Important:') && (
+                    <span className="text-yellow-500 font-bold"><br /><br />Note: Store your mnemonic phrase securely. If lost, it cannot be recovered.</span>
+                  )}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="py-16 bg-black text-white">
+          <div className="container mx-auto">
+            <h1 className="text-[4em] leading-none font-bold mb-6 text-theme-default text-center">
+              Transferring Tokens
+            </h1>
+            <div className="flex flex-wrap justify-center items-start gap-6 sm:gap-12">
+              {[
+                {
+                  image: '/transferring_tokens/selectTransferDetails.png',
+                  title: 'Select Transfer Details',
+                  description:
+                    'On the Balance page, choose the address you want to transfer from. Select the XON Token and click the "Transfer" button.',
+                },
+                {
+                  image: '/transferring_tokens/enterDetails.png',
+                  title: 'Enter Transfer Details',
+                  description:
+                    'Input the number of selected Tokens to transfer and enter the recipient’s address.',
+                },
+                {
+                  image: '/transferring_tokens/confirmTransactions.png',
+                  title: 'Confirm Transaction',
+                  description:
+                    'Click the “Send” button and wait for the transaction fee calculation. Once done, click the “Confirm” button.',
+                },
+                {
+                  image: '/transferring_tokens/completeAndVerify.png',
+                  title: 'Complete and Verify',
+                  description:
+                    'Wait for the transfer to complete, then you will be redirected back to the balance tab. Check both your account and the recipient’s account to confirm the transaction.',
+                },
+              ].map(({ image, title, description }, index) => (
+                <div key={index} className="flex flex-col items-center justify-start gap-4 w-full sm:w-[250px] md:w-[300px]">
+                  <div className="w-full h-[350px] mt-12 flex justify-center items-center">
+                    <Image
+                      src={image}
+                      alt={title}
+                      width={300}
+                      height={350}
+                      className="object-contain"
+                    />
+                  </div>
+                  <h4 className="text-white font-bold text-xl mt-8 text-center">{title}</h4>
+
+                  <p className="flex-shrink-0 max-w-xs text-sm text-justify opacity-80 mt-2">
+                    {description
+                      .replace(/“|”/g, '"') // Replace smart quotes with standard quotes
+                      .split('"')
+                      .map((part, i) =>
+                        i % 2 === 0 ? (
+                          part
+                        ) : (
+                          <span key={i} className="text-theme-default font-bold">{part}</span>
+                        )
+                      )}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+
+
     </div>
   );
 }
